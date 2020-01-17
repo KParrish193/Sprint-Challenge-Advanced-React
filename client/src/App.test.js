@@ -8,3 +8,12 @@ test('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
+test('includes searches')
+
+
+test('text includes Megan Rapinoe')
+
+
+test('text includes player name')
+
+
