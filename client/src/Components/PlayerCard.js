@@ -2,34 +2,32 @@ import React from "react";
 import styled from 'styled-components';
 
 const PlayerCardBody = styled.div`
-
+background-color: white;
 `
 
-const PlayerCardHeader = styled.h2`
-color: blue;
-`
-const PlayerCardText = styled.div`
+// const PlayerCardHeader = styled.h3`
+// color: blue;
+// `
 
-`
+// const PlayerCardText = styled.div`
+// color: red
+// `
 
-const PlayerCard = (props) => {
-
+const PlayerCard = () => {
+    
+    
     return (
-    <>
-
-        <div>
         <PlayerCardBody className="UserCardBody">
-            <PlayerCardHeader>
-                Player Name:
+            <p>Dummy Text</p>
+            {/* <PlayerCardHeader>
+                Player Name: {players.name}
             </PlayerCardHeader>
         <PlayerCardText className="other-info">
-            <p>Country: </p>
-            <p>Number of Google Searches: </p>
-        </PlayerCardText>
+            <p>Country: {players.country} </p>
+            <p>Number of Google Searches: {players.searches} </p>
+        </PlayerCardText> */}
         </PlayerCardBody>
-        </div>
-
-    </>
     )
 };
-    export default PlayerCard;
+
+export default PlayerCard;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
-import PlayerCard from "./Components/PlayerCard"
+import PlayerCardList from "./Components/PlayerCard"
 
   class App extends Component {
   
@@ -13,7 +13,7 @@ import PlayerCard from "./Components/PlayerCard"
       axios
         .get('http://localhost:5000/api/players')
         .then(response => {
-            console.log(` data from CDM`, response.data);
+            console.log(`data from CDM`, response.data);
             this.setState({
               players : response.data
             })
@@ -24,17 +24,20 @@ import PlayerCard from "./Components/PlayerCard"
       };
 
   render() {
+  console.log(this.state.players)
     return (
     <div className="App">
-      <header className="App-header">
+        <div className="App-header">
         <p>
-          World Cup Google Searches
+          Women's World Cup Google Searches
         </p>
-      </header>
-      <PlayerCard 
-        players = {this.state.players}
-      />
+        </div>
 
+      <div className="list" >
+      <PlayerCardList
+        players={this.state.players}
+      />
+      </div>
     </div>
   );
   };
