@@ -8,7 +8,8 @@ test('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-test('includes searches')
+
+test('text includes searches')
 
 
 test('text includes Megan Rapinoe')
