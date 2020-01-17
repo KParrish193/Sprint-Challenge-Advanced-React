@@ -3,6 +3,9 @@ import styled from 'styled-components';
 
 const PlayerCardBody = styled.div`
 background-color: white;
+min-width: 30%;
+border: solid 1px grey;
+margin: 1%;
 `
 
 const PlayerCardHeader = styled.h3`
@@ -14,8 +17,7 @@ color: red
 `
 
 const PlayerCard = (props) => {
-    
-    
+
     return (
         <PlayerCardBody className="UserCardBody">
             <PlayerCardHeader>

@@ -1,12 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import PlayerCard from './PlayerCard';
+
+const CardList = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex-wrap: wrap;
+
+`
+
 
 const PlayerCardList = (props) => {
     console.log(props);
     
     return (
-    <div className="card-list">
+    <CardList className="card-list">
         {props.players.map(data => (
             <PlayerCard 
             key={data.id} 
@@ -15,7 +25,7 @@ const PlayerCardList = (props) => {
             searches={data.searches} 
             />
         ))}
-    </div>
+    </CardList>
     );
 }
 
