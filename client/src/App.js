@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
-import PlayerCardList from "./Components/PlayerCard"
+import PlayerCardList from "./Components/PlayerCardList";
 
   class App extends Component {
   

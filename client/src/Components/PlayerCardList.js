@@ -7,12 +7,12 @@ const PlayerCardList = (props) => {
     
     return (
     <div className="card-list">
-        {props.map(data => (
+        {props.players.map(data => (
             <PlayerCard 
-            key={id} 
-            name={name}
-            country={country}
-            searches={searches} 
+            key={data.id} 
+            name={data.name}
+            country={data.country}
+            searches={data.searches} 
             />
         ))}
     </div>

@@ -5,27 +5,26 @@ const PlayerCardBody = styled.div`
 background-color: white;
 `
 
-// const PlayerCardHeader = styled.h3`
-// color: blue;
-// `
+const PlayerCardHeader = styled.h3`
+color: blue;
+`
 
-// const PlayerCardText = styled.div`
-// color: red
-// `
+const PlayerCardText = styled.div`
+color: red
+`
 
-const PlayerCard = () => {
+const PlayerCard = (props) => {
     
     
     return (
         <PlayerCardBody className="UserCardBody">
-            <p>Dummy Text</p>
-            {/* <PlayerCardHeader>
-                Player Name: {players.name}
+            <PlayerCardHeader>
+                Player Name: {props.name}
             </PlayerCardHeader>
         <PlayerCardText className="other-info">
-            <p>Country: {players.country} </p>
-            <p>Number of Google Searches: {players.searches} </p>
-        </PlayerCardText> */}
+            <p>Country: {props.country} </p>
+            <p>Number of Google Searches: {props.searches} </p>
+        </PlayerCardText>
         </PlayerCardBody>
     )
 };
